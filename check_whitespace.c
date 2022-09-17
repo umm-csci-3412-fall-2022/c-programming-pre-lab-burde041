@@ -62,7 +62,7 @@ int is_clean(char const *str) {
   int result = strcmp(str, cleaned);
 	
   if(strcmp(cleaned, "") !=0)
-	  free(cleaned);
+	  free((char*)cleaned);
 
   return result == 0;
 }
